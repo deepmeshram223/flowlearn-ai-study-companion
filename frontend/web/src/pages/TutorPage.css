@@ -1,0 +1,243 @@
+.tutor-page {
+    width: min(900px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 42px 0 80px;
+}
+
+/* ---------- Back ---------- */
+
+.tutor-back {
+    padding: 0;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.tutor-back:hover {
+    color: var(--text);
+}
+
+/* ---------- Header ---------- */
+
+.tutor-header {
+    margin-top: 42px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tutor-eyebrow {
+    margin: 0 0 18px;
+    color: var(--accent);
+    font-size: 11px;
+}
+
+.tutor-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+}
+
+.tutor-header p:last-child {
+    max-width: 600px;
+    margin: 12px 0 0;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* ---------- Chat ---------- */
+
+.chat-area {
+    min-height: 360px;
+    padding: 40px 0;
+}
+
+.tutor-empty {
+    max-width: 620px;
+}
+
+.empty-label {
+    margin: 0 0 18px;
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.suggested-question {
+    width: 100%;
+    display: block;
+
+    padding: 14px 0;
+
+    background: transparent;
+    border-bottom: 1px solid var(--border);
+
+    color: var(--text-secondary);
+
+    font-size: 12px;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: color 0.15s ease;
+}
+
+.suggested-question:hover {
+    color: var(--accent);
+}
+
+/* ---------- Messages ---------- */
+
+.message {
+    margin-bottom: 42px;
+}
+
+.message.user {
+    padding-left: 32px;
+}
+
+.message.assistant {
+    padding-right: 32px;
+}
+
+.message-role {
+    margin-bottom: 10px;
+    color: var(--text-muted);
+    font-size: 10px;
+    text-transform: lowercase;
+}
+
+.message.user .message-role {
+    color: var(--accent);
+}
+
+.message.assistant .message-role {
+    color: var(--success);
+}
+.message-content {
+    max-width: 760px;
+
+    color: var(--text);
+
+    font-size: 13px;
+    line-height: 1.85;
+
+    white-space: pre-wrap;
+}
+
+.thinking {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* ---------- Sources ---------- */
+
+.message-sources {
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.message-sources > span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent);
+}
+
+.source {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.source span:first-child {
+    color: var(--text-secondary);
+}
+
+.source span:last-child {
+    color: var(--accent);
+}
+/* ---------- Input ---------- */
+
+.tutor-input-area {
+    position: sticky;
+    bottom: 20px;
+
+    padding: 14px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.tutor-input-area textarea {
+    width: 100%;
+    padding: 4px;
+
+    resize: none;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.tutor-input-area textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.input-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 8px;
+}
+
+.input-footer span {
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.input-footer button {
+    padding: 8px 16px;
+
+    background: var(--accent);
+    color: var(--bg);
+
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.input-footer button:hover {
+    opacity: 0.85;
+}
+
+.input-footer button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+    .tutor-page {
+        width: calc(100% - 32px);
+        padding-top: 32px;
+    }
+
+    .tutor-header h1 {
+        font-size: 26px;
+    }
+
+    .chat-area {
+        padding: 30px 0;
+    }
+}

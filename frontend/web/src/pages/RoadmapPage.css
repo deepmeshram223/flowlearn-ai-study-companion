@@ -1,0 +1,71 @@
+.roadmap-result {
+    margin-top: 70px;
+    max-width: 900px;
+}
+
+.roadmap-result > h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.roadmap-result > p {
+    margin: 12px 0 50px;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.roadmap-phase {
+    margin-bottom: 48px;
+}
+
+.roadmap-phase h3 {
+    margin: 0 0 18px;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.roadmap-nodes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.roadmap-node {
+    display: flex;
+    gap: 20px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.node-id {
+    color: var(--accent);
+    font-size: 12px;
+    min-width: 25px;
+}
+
+.roadmap-node h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.roadmap-node p {
+    margin: 0 0 10px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.node-meta {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.roadmap-error {
+    margin-top: 20px;
+    color: var(--danger);
+    font-size: 12px;
+}

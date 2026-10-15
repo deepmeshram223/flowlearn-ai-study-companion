@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+frontend/web/node_modules/
+frontend/web/dist/
+
+# Build files
+build/
+dist/
+
+# Uploaded documents
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Generated data
+data/processed/
+data/cache/
+data/tmp/
+
+# Logs
+*.log
+
+# Database/local files
+*.db
+*.sqlite
+*.sqlite3
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Temporary files
+*.tmp
+*.temp
+
+# Model/cache files
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Coverage
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test documents
+data/*.pdf
